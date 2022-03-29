@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Shippori+Antique+B1&display=swap');
+:root{
+	--font-primary: "Montserrat", sans-serif;
+	--font-secundary: "Poppins", sans-serif;
+	--font-action: "Shippori Antique B1", sans-serif;
+}
+*{margin: 0;padding: 0;box-sizing: border-box;font-family: 'Poppins', sans-serif;}
+html,body{height: 100%;scroll-behavior: smooth;/*background-color: #777777;*/}
+.clear{clear: both;}
+.container{max-width: 1280px;margin: 0 auto;padding: 0 2%;}
+
+/****/
+
+.chama {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(29, 28, 28);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader {
+    width: 80px;
+    height: 80px;
+}
+
+.loader::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    margin: 8px;
+    animation: spin 1.2s ease infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*header{padding: 30px;}*/
+
+.logo{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    float: left;
+    width: 90px;
+    height: 40px;
+    padding: 8px;
+    margin-top: 30px;
+}
+
+.logo h2{color: white;font-size: 26px;}
+
+.logo img{ 
+    width: 100%;
+    height: 100%;
+}
+
+.desktop{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 50px;
+    float: right;
+    margin-top: 30px;
+}
+
+.desktop ul{
+    list-style-type: none;
+}
+
+.desktop ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+.desktop ul li a{
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s all;
+}
+
+.desktop ul li a:hover{
+    padding: 6px 10px;
+    background-color: #8181813b;
+    font-size: 18px;
+}
+
+/****/
+
+section.bg > .container{
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.overlay{background-color: black; opacity: 1; width: 100%; height: 90vh;}
+
+.bg-wrapper{
+    text-align: center;
+    width: 100%;
+    height: 90vh;
+}
+
+.bg-img{
+    width: 100%;
+    height: 100%;
+}
+
+.bg-img img{
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-text{
+    text-align: left;
+    color: white;
+    position: absolute;
+    top: 37%;
+    left: 4%;
+}
+
+.bg-text h2{
+    font-size: 42px;
+    transition: 1s all;
+}
+
+.bg-text h2:hover{color: rgb(36, 35, 35);}
+
+.bg-text p{
+    font-size: 22px;
+    transition: 1s all;
+}
+
+.bg-text p:hover{color: rgb(36, 35, 35);}
+
+.bg-text button{
+    margin-top: 10px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.877);
+    transition: 0.5s all;
+}
+
+.bg-text button:hover{
+    color: white;
+    border: 2px solid white;
+    background-color: rgb(36, 35, 35);
+    padding: 8px 50px;
+}
+
+.bg-text button a{
+    padding: 0 10px;
+    color: rgb(36, 36, 36);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.5s all;
+}
+
+.bg-text button a:hover{
+    padding: 10px 20px;
+    color: white;
+}
+
+section.cards{
+    background-color: rgb(36, 35, 35);
+    padding: 40px;
+    height: 100%;
+}
+
+section.cards > .container{position: relative;}
+
+.cards-wrapper{
+    position: absolute;
+    top: -90px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: rgb(19, 19, 19);
+}
+
+.card-formato{
+    margin-right: 45px;
+    padding: 1%;
+    width: 24%;
+    height: 470px;
+    border-radius: 15px;
+    background-color: white;
+    transition: 0.5s all;
+}
+
+.card-formato:hover{
+    margin-top: -30px;
+    width: 25%;
+    height: 520px;
+}
+
+.card-img{
+    padding-top: 40px;
+    font-size: 80px;
+}
+
+.card-img i{
+    color: rgb(19, 19, 19);
+}
+
+.card-text h2{
+    color: rgb(19, 19, 19);
+    font-weight: 600;
+    margin-top: 17px;
+    margin-bottom: 30px;
+    font-size: 27px;
+}
+
+.card-text p{
+    color: rgb(19, 19, 19);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+section.contato{
+    position: relative;
+    height: 100vh;
+}
+
+.contato-wrapper{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contato-wrapper form input{
+    border: 1px solid black;
+    width: 100%;
+    padding: 8px;
+    margin: 4px;
+}
+
+.contato-wrapper form textarea{
+    border: 1px solid black;
+    width: 100%;
+    resize: vertical;
+    padding: 8px;
+    margin: 4px;
+}
