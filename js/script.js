@@ -5,4 +5,14 @@ const overlay = document.querySelector(".chama");
 
 window.addEventListener("load", function () {
     overlay.style.display = "none";
-})
+});
+
+$(window).scroll(function() { 
+    var scroll = $(window).scrollTop();
+ 
+    if (scroll > 1415) {
+        $('.menu').addClass('menu-auxiliar');
+    } else {
+        $('.menu').removeClass('menu-auxiliar');
+    }
+});
