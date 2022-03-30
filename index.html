@@ -21,7 +21,7 @@
                 <ul>
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Produtos</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </div><!--desktop-->
             <div class="clear"></div>
@@ -33,7 +33,7 @@
             <div class="bg-wrapper">
                 <div class="overlay">
                 <div class="bg-img">
-                    <img src="images/bg-alt.jpg" />
+                    <!--<img src="images/bg-alt.jpg" />-->
                 </div><!--bg-img-->
                 </div><!--overlay-->
                 <div class="bg-text">
@@ -82,14 +82,14 @@
         </div><!--container-->
     </section><!--cards-->
 
-    <section class="contato">
+    <section class="contato" id="contato">
         <div class="container">
             <h2>Contato</h2>
             <div class="contato-wrapper">
                 <form>
-                    <input type="text" name="telefone" placeholder="Nome..." />
-                    <input type="text" name="telefone" placeholder="Telefone..." />
-                    <input type="email" name="email" placeholder="E-mail..." />
+                    <input required type="text" name="telefone" placeholder="Nome..." />
+                    <input required type="text" name="telefone" placeholder="Telefone..." />
+                    <input required type="email" name="email" placeholder="E-mail..." />
                     <textarea placeholder="Deixe sua mensagem..."></textarea>
                     <input type="submit" name="button" value="Enviar" />
                 </form>
