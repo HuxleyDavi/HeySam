@@ -11,6 +11,11 @@ html,body{height: 100%;scroll-behavior: smooth;/*background-color: #777777;*/}
 
 /****/
 
+
+
+
+/****/
+
 .chama {
     position: fixed;
     top: 0;
@@ -132,7 +137,8 @@ section.bg > .container{
 }
 
 .bg-img{
-    background-image: url('../images/bg-alt.jpg');
+    overflow: hidden;
+    background-image: url('../images/bg7.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -151,14 +157,18 @@ section.bg > .container{
 
 .bg-text h2{
     font-size: 42px;
-    transition: 1s all;
+    opacity: 0;
+	animation: moveBanner 1s 0.5s forwards;
+    transition: 0.6s all;
 }
 
 .bg-text h2:hover{color: rgb(36, 35, 35);}
 
 .bg-text p{
     font-size: 22px;
-    transition: 1s all;
+    opacity: 0;
+	animation: moveBanner 1s 0.7s forwards;
+    transition: 0.6s all;
 }
 
 .bg-text p:hover{color: rgb(36, 35, 35);}
@@ -169,7 +179,19 @@ section.bg > .container{
     border-radius: 10px;
     border: 0;
     background-color: rgba(255, 255, 255, 0.877);
+    opacity: 0;
+	animation: moveBanner 1s 0.9s forwards;
     transition: 0.5s all;
+}
+
+@keyframes moveBanner{
+	0%{
+		transform: translateY(10rem) rotateY(-30deg);
+	}
+	100%{
+		transform: translateY(0) rotateY(0);
+		opacity: 1;
+	}
 }
 
 .bg-text button:hover{
@@ -222,9 +244,9 @@ section.cards > .container{position: relative;}
 }
 
 /*.card-formato:hover{
-    margin-top: -30px;
-    width: 25%;
-    height: 520px;
+    margin-top: -10px;
+    width: 24.5%;
+    height: 480px;
 }*/
 
 .card-img{
@@ -247,7 +269,7 @@ section.cards > .container{position: relative;}
 .card-text p{
     color: rgb(19, 19, 19);
     font-weight: 400;
-    font-size: 18px;
+    font-size: 17.5px;
 }
 
 .text-bottom{
@@ -265,7 +287,7 @@ section.cards > .container{position: relative;}
     border-radius: 15px;
     border: 2px solid black;
     cursor: pointer;
-    padding: 6px;
+    padding: 8px 15px;;
     font-size: 14px;
 }
 
@@ -358,15 +380,11 @@ footer{background-color: rgb(36, 35, 35);padding: 10px;}
 
     .card-formato{
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
 
     .cards-wrapper{
-        margin-top: -90px;
         display: block;
-        justify-content: center;
-        text-align: center;
-        flex-wrap: wrap;
-        color: rgb(19, 19, 19);
     }
+    
 }
