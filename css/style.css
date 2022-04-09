@@ -175,7 +175,7 @@ section.bg > .container{
 
 .bg-text button{
     margin-top: 10px;
-    padding: 8px 15px;
+    padding: 8px 30px;
     border-radius: 10px;
     border: 0;
     background-color: rgba(255, 255, 255, 0.877);
@@ -234,7 +234,8 @@ section.cards > .container{position: relative;}
 }
 
 .card-formato{
-    margin-right: 45px;
+    margin-left: 4%;
+    margin-right: 35px;
     padding: 1%;
     width: 24%;
     height: 470px;
@@ -275,11 +276,11 @@ section.cards > .container{position: relative;}
 .text-bottom{
     color: white;
     text-align: center;
+    margin-top: 120px;
 }
 
 .text-bottom h2{
     font-size: 30px;
-    padding-top: 120px;
     padding-bottom: 15px;
 }
 
@@ -350,6 +351,16 @@ footer{background-color: rgb(36, 35, 35);padding: 10px;}
     color: white;
 }
 
+
+.footer-wrapper i{
+    font-size: 16px;
+    transition: all 0.1s;
+}
+
+.footer-wrapper i:hover{
+    font-size: 20px;
+}
+
 /****/
 
 @media screen and (max-width: 768px){
@@ -375,16 +386,38 @@ footer{background-color: rgb(36, 35, 35);padding: 10px;}
     }
 
     section.cards{
-        height: 270%;
+        min-height: 250%;
     }
 
     .card-formato{
-        width: 100%;
+        width: 80%;
         margin-bottom: 40px;
     }
 
-    .cards-wrapper{
-        display: block;
+    .card-text{
+        padding: 2%;
     }
-    
+
+    .cards-wrapper{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .card-text p{
+        font-size: 19px;
+    }
+
+    .card-formato{
+        width: 90%;
+        height: 450px;
+        /*transition: 0.8s all;*/
+    }
+
+    .footer-wrapper{
+        float: none;
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
 }
