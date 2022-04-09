@@ -390,6 +390,7 @@ footer{background-color: rgb(36, 35, 35);padding: 10px;}
     }
 
     .card-formato{
+        margin-left: 6%;
         width: 80%;
         margin-bottom: 40px;
     }
@@ -409,6 +410,7 @@ footer{background-color: rgb(36, 35, 35);padding: 10px;}
     }
 
     .card-formato{
+        margin-left: 8%;
         width: 90%;
         height: 450px;
         /*transition: 0.8s all;*/
