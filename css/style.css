@@ -386,21 +386,18 @@ footer{background-color: rgb(36, 35, 35);padding: 10px;}
     }
 
     section.cards{
-        min-height: 250%;
+        min-height: 270%;
     }
 
     .card-formato{
-        margin-left: 6%;
-        width: 80%;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
         margin-bottom: 40px;
     }
 
     .card-text{
         padding: 2%;
-    }
-
-    .cards-wrapper{
-        display: flex;
     }
 }
 
@@ -410,8 +407,6 @@ footer{background-color: rgb(36, 35, 35);padding: 10px;}
     }
 
     .card-formato{
-        margin-left: 8%;
-        width: 90%;
         height: 450px;
         /*transition: 0.8s all;*/
     }
