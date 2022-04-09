@@ -296,7 +296,7 @@ section.cards > .container{position: relative;}
 
 section.contato{
     position: relative;
-    height: 83%;
+    min-height: 83%;
 }
 
 .contato h2{
@@ -402,6 +402,10 @@ footer{background-color: rgb(36, 35, 35);padding: 10px;}
 }
 
 @media screen and (max-width: 520px){
+    section.cards{
+        min-height: 230%;
+    }
+
     .card-text p{
         font-size: 19px;
     }
