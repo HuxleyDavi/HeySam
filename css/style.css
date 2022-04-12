@@ -403,7 +403,7 @@ footer{background-color: rgb(36, 35, 35);padding: 10px;}
 
 @media screen and (max-width: 520px){
     section.cards{
-        min-height: 230%;
+        min-height: 242%;
     }
 
     .card-text p{
