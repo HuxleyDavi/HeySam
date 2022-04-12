@@ -400,6 +400,10 @@ footer{background-color: rgb(36, 35, 35);padding: 10px;}
         padding: 2%;
     }
 
+    .contato-wrapper{
+        width: 90%;
+    }
+
     .text-bottom{
         margin-bottom: 120px;
     }
@@ -417,10 +421,6 @@ footer{background-color: rgb(36, 35, 35);padding: 10px;}
     .card-formato{
         height: 450px;
         /*transition: 0.8s all;*/
-    }
-
-    .contato-wrapper{
-        width: 90%;
     }
 
     .footer-wrapper{
