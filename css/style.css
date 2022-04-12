@@ -399,11 +399,15 @@ footer{background-color: rgb(36, 35, 35);padding: 10px;}
     .card-text{
         padding: 2%;
     }
+
+    .text-bottom{
+        margin-bottom: 100px;
+    }
 }
 
 @media screen and (max-width: 520px){
     section.cards{
-        min-height: 242%;
+        min-height: 230%;
     }
 
     .card-text p{
