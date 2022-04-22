@@ -14,12 +14,5 @@ $(window).scroll(function() {
         $('.menu').addClass('menu-auxiliar');
     } else {
         $('.menu').removeClass('menu-auxiliar');
-    };
-
-    /*if (scroll > 1100) {
-        $('.menu').addClass('transparent');
-    } else {
-        $('.menu').removeClass('transparent');
-    };*/
-
+    }
 });
