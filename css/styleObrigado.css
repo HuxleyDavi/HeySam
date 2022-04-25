@@ -49,18 +49,21 @@ footer{background-color: rgb(36, 35, 35);padding: 10px;}
 }
 
 .footer-wrapper a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     text-decoration: none;
 }
 
-
 .footer-wrapper i{
+    margin-bottom: 6px;
     font-size: 16px;
-    transition: all 0.1s;
+    transition: all 0.3s;
 }
 
 .footer-wrapper i:hover{
-    font-size: 20px;
+    font-size: 21px;
 }
 
 @media screen and (max-width: 520px){
