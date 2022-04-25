@@ -92,7 +92,7 @@ html,body{height: 100%;scroll-behavior: smooth;/*background-color: #777777;*/}
     color: white;
     text-decoration: none;
     transition: 0.5s all;
-}
+} 
 
 .desktop ul li a:hover{
     padding: 6px 10px;
@@ -100,17 +100,10 @@ html,body{height: 100%;scroll-behavior: smooth;/*background-color: #777777;*/}
     font-size: 18px;
 }
 
+
 /*
 .mobile{
-    width: 100%;
-}
-
-.mobile ul{
-    list-style-type: none;
-}
-
-.mobile ul li{
-    background-color: red;
+    text-align: center;
 }
 */
 
@@ -132,7 +125,7 @@ section.bg > .container{
 
 .bg-img{
     overflow: hidden;
-    background-image: url('../images/bg7.jpg');
+    background-image: url('../images/bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

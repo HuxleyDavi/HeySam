@@ -7,6 +7,7 @@
     <meta name="description" content="Hey Sam Produtora de beats músicais focados na área do trap.">
     <meta name="keywords" content="trap,beat,beat maker,beats,real-g,gang,nigga,money,beat-free,beats-free,producao-musical,producoes" />
     <meta name="author" content="HS Corporation">
+    <link rel="icon" type="image/png" href="/favicon.png"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -29,13 +30,13 @@
                 </ul>
             </div><!--desktop-->
 
-            <!--<div class="mobile menu">
+            <!--<div class="mobile">
                 <ul>
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Produtos</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
-            </div><mobile-->
+            </div><mobile>-->
 
             <div class="clear"></div>
         </div><!--container-->
@@ -106,13 +107,22 @@
         <div class="container">
             <h2>Contato</h2>
             <div class="contato-wrapper">
-                <form>
-                    <input required type="text" name="telefone" placeholder="Nome..." />
-                    <input required type="text" name="telefone" placeholder="Telefone..." />
+
+                <form action="https://formsubmit.co/huxdavi@gmail.com" method="POST">
+                    <input required type="text" name="name" placeholder="Nome..." />
+                    <input required type="text" name="telefone" id="telefone" placeholder="Telefone..." maxlength="15"/>
                     <input required type="email" name="email" placeholder="E-mail..." />
-                    <textarea placeholder="Deixe sua mensagem..."></textarea>
+                    <textarea name="message" placeholder="Deixe sua mensagem... (Opcional)"></textarea>
+                    <!--Form Submit-->
+                    <input type="hidden" name="_next" value="http://localhost/H3y%20S4m/next.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_cc" value="contatoProdsam@gmail.com">
+                    <input type="hidden" name="_subject" value="Nova mensagem!">
+                    <input type="hidden" name="_template" value="table">
                     <input class="end" type="submit" name="button" value="Enviar" />
                 </form>
+                
             </div>
         </div>
     </section>

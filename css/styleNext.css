@@ -1,0 +1,21 @@
+*{margin: 0;padding: 0;box-sizing: border-box;font-family: 'Poppins', sans-serif;}
+html,body{height: 100%;scroll-behavior: smooth;/*background-color: #777777;*/}
+.clear{clear: both;}
+
+
+.text{height: 100vh;}
+.text-wrapper{
+    padding-top: 100px;
+    text-align: center;
+}
+
+.text-wrapper a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+.text-wrapper a:hover{
+    font-size: 22px;
+}
