@@ -7,7 +7,6 @@ html,body{height: 100%;scroll-behavior: smooth;/*background-color: #777777;*/}
 
 
 
-
 /****/
 
 .chama {
@@ -228,14 +227,15 @@ section.cards > .container{position: relative;}
     height: 470px;
     border-radius: 15px;
     background-color: white;
-    /*transition: 0.8s all;*/
+    transition: 0.8s all;
 }
 
-/*.card-formato:hover{
+.card-formato:hover{
     margin-top: -10px;
+    padding: 1%;
     width: 24.5%;
     height: 480px;
-}*/
+}
 
 .card-img{
     padding-top: 40px;
@@ -277,6 +277,11 @@ section.cards > .container{position: relative;}
     cursor: pointer;
     padding: 8px 15px;;
     font-size: 14px;
+    transition: all 0.3s;
+}
+
+.text-bottom button:hover{
+    font-size: 16px;
 }
 
 .text-bottom button a{text-decoration: none;color: black;}
@@ -311,7 +316,8 @@ section.contato{
     margin: 4px;
 }
 
-.contato-wrapper form input.end{cursor: pointer;}
+.contato-wrapper form input.end{cursor: pointer;transition: 0.2s;}
+.contato-wrapper form input.end:hover{cursor: pointer;font-size: 15px;}
 
 .contato-wrapper form textarea{
     border-radius: 15px;
@@ -333,20 +339,31 @@ footer{background-color: rgb(36, 35, 35);padding: 10px;}
 
 .footer-wrapper p{
     font-size: 14px;
+    font-weight: lighter;
+    transition: all 0.3s;
+}
+
+.footer-wrapper p:hover{
+    font-size: 16px;
 }
 
 .footer-wrapper a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
+    text-decoration: none;
 }
 
 
 .footer-wrapper i{
+    margin-bottom: 6px;
     font-size: 16px;
-    transition: all 0.1s;
+    transition: all 0.3s;
 }
 
 .footer-wrapper i:hover{
-    font-size: 20px;
+    font-size: 21px;
 }
 
 /****/
