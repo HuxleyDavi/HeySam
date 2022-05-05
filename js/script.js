@@ -1,3 +1,5 @@
+//Pre-loader de carregamento
+
 const overlay = document.querySelector(".chama");
 
 // Quando a página for totalmente carregada, o overlay será desabilitado e a página

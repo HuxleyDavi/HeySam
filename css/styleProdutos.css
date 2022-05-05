@@ -13,6 +13,50 @@ footer{
     flex: 1 0 auto;
 }
 
+.logo{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    float: left;
+    width: 187px;
+    height: 50px;
+    padding: 8px;
+    margin-top: 30px;
+}
+
+.logo a{color: black;font-size: 26px;text-decoration: none;}
+
+.desktop{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 50px;
+    float: right;
+    margin-top: 30px;
+}
+
+.desktop ul{
+    list-style-type: none;
+}
+
+.desktop ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+.desktop ul li a{
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    transition: 0.5s all;
+} 
+
+.desktop ul li a:hover{
+    padding: 6px 10px;
+    background-color: #3535353b;
+    font-size: 18px;
+}
+
 .text{height: 85vh;}
 .text-wrapper{
     padding-top: 100px;
