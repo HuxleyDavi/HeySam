@@ -47,7 +47,6 @@ html,body{height: 100%;scroll-behavior: smooth;/*background-color: #777777;*/}
 
 .text{margin-top: 20px;text-align: center;}
 .text-wrapper{
-    padding-left: 50px;
     text-align: center;
 }
 
@@ -166,6 +165,8 @@ footer{
     .logo h2{
         padding-top: 15px;
     }
+
+    .text{padding-top: 80px;}
 
     .prod-wrapper{
         flex-direction: column;

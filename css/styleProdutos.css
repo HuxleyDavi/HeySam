@@ -112,6 +112,29 @@ footer{background-color: rgb(36, 35, 35);padding: 10px;}
     font-size: 21px;
 }
 
+@media screen and (max-width: 768px){
+    .desktop{
+        display: none;
+    }
+
+    .logo{
+        z-index: 999;
+        position: relative;
+        top: auto;
+        float: none;
+        width: 100%;
+        height: 0;
+        padding: 0;
+        margin-top: 0;
+        padding-top: 0;
+        text-align: center;
+    }
+
+    .logo h2{
+        padding-top: 15px;
+    }
+}
+
 @media screen and (max-width: 520px){
     .footer-wrapper{
         float: none;
