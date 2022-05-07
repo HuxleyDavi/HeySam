@@ -1,14 +1,24 @@
-//Pre-loader de carregamento
+/*//--------------------------By HS Corp-------------------------------//*/
+/*//---------------------------@hs.corp-------------------------------//*/
+/*--//-----------------------hscorpp@gmail.com-------------------------------//*/
 
+//Pre-loader de carregamento -------
+
+// Quando a página for totalmente carregada, o overlay será desabilitado e a página irá aparecer.
 const overlay = document.querySelector(".chama");
-
-// Quando a página for totalmente carregada, o overlay será desabilitado e a página
-// irá aparecer.
 
 window.addEventListener("load", function () {
     overlay.style.display = "none";
 });
 
+
+/*//--------------------------By HS Corp-------------------------------//*/
+/*//---------------------------@hs.corp-------------------------------//*/
+/*--//-----------------------hscorpp@gmail.com-------------------------------//*/
+
+//Função backgroun conforme a scroll descer -------
+
+/*
 $(window).scroll(function() { 
     var scroll = $(window).scrollTop();
 
@@ -19,7 +29,14 @@ $(window).scroll(function() {
     }
 });
 
-/* Máscaras ER */
+*/
+
+/*//--------------------------By HS Corp-------------------------------//*/
+/*//---------------------------@hs.corp-------------------------------//*/
+/*--//-----------------------hscorpp@gmail.com-------------------------------//*/
+
+//Mascara do telefone no contato -------
+
 function mascara(o,f){
     v_obj=o
     v_fun=f
@@ -42,3 +59,14 @@ window.onload = function(){
 		mascara( this, mtel );
 	}
 };
+
+
+/*//--------------------------By HS Corp-------------------------------//*/
+/*//---------------------------@hs.corp-------------------------------//*/
+/*--//-----------------------hscorpp@gmail.com-------------------------------//*/
+
+//Menu responsivo -------
+
+$('.mobile > i').click(function(){
+	$(this).parent().find('ul').slideToggle();
+})
