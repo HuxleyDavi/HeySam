@@ -2,8 +2,6 @@
 /*//---------------------------@hs.corp-------------------------------//*/
 /*//-----------------------hscorpp@gmail.com-------------------------------//*/
 
-/*padrões do site*/
-
 *{margin: 0;padding: 0;box-sizing: border-box;font-family: 'Poppins', sans-serif;}
 html,body{height: 100%;scroll-behavior: smooth;/*background-color: #777777;*/}
 .clear{clear: both;}
@@ -19,26 +17,19 @@ footer{
     flex: 1 0 auto;
 }
 
-/*header*/
+/****/
+/**header**/
 
 .logo{
-    z-index: 999;
-    position: fixed;
-    top: 0;
     float: left;
     width: 187px;
     height: 50px;
-    padding: 8px;
     margin-top: 30px;
 }
 
 .logo a{color: black;font-size: 26px;text-decoration: none;}
 
 .desktop{
-    z-index: 999;
-    position: fixed;
-    top: 0;
-    right: 50px;
     float: right;
     margin-top: 30px;
 }
@@ -49,7 +40,7 @@ footer{
 
 .desktop ul li{
     display: inline-block;
-    margin: 10px 20px;
+    margin: 8px 20px;
 }
 
 .desktop ul li a{
@@ -65,61 +56,16 @@ footer{
     font-size: 18px;
 }
 
-.mobile{
-	float: right;
-	display: none;
-}
-
-.mobile ul{
-	display: none;
-	z-index: 1;
-	position: absolute;
-	left: 0;
-	top: 4.1rem;
-	border-top:2px solid black;
-	background: white;
-	width: 100%;
-	list-style-type: none;
-}
-
-.mobile ul li{
-	text-align: center;
-	width: 100%;
-	display: inline-block;
-	border-bottom: 1px solid black;
-	padding: 6.4px;
-	transition: all 0.3s;
-}
-
-.mobile a{
-	font-family: var(--font-primary);
-	color: black;
-	padding: 8px 20px;
-	text-decoration: none;
-	transition: all 0.3s;
-}
-
-.mobile a:hover{
-    font-size: 1.12rem;
-}
-
-.mobile > i{
-    margin-top: 20px;
-	cursor: pointer;
-	font-size: 2rem;
-	color: white;
-}
-
 /****/
+/**titulo**/
 
-.text{height: 85vh;}
+.text{margin-top: 20px;text-align: center;}
 .text-wrapper{
-    padding-top: 100px;
     text-align: center;
 }
-.text-wrapper h2{text-align: center;}
 
 .text-wrapper a{
+    display: none;
     color: black;
     text-decoration: none;
     font-size: 20px;
@@ -130,9 +76,58 @@ footer{
     font-size: 22px;
 }
 
-/*footer*/
+/****/
+/*contato*/
 
-footer{background-color: rgb(36, 35, 35);padding: 10px;}
+section.contato{
+    position: relative;
+    min-height: 83%;
+}
+
+.contato h2{
+    text-align: center;
+    padding-top: 80px;
+    font-size: 25px;
+}
+
+.contato-wrapper{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contato-wrapper form input{
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid black;
+    width: 100%;
+    padding: 8px;
+    margin: 4px;
+}
+
+.contato-wrapper form input.end{cursor: pointer;transition: 0.2s;}
+.contato-wrapper form input.end:hover{cursor: pointer;font-size: 15px;}
+
+.contato-wrapper form textarea{
+    border-radius: 20px;
+    border: 1px solid black;
+    width: 100%;
+    resize: vertical;
+    padding: 8px;
+    margin: 4px;
+}
+
+/****/
+/**footer**/
+
+footer{
+    background-color:rgb(36, 35, 35);
+    padding: 10px;
+}
 
 .footer-wrapper{
     color: white;
@@ -159,7 +154,6 @@ footer{background-color: rgb(36, 35, 35);padding: 10px;}
     text-decoration: none;
 }
 
-
 .footer-wrapper i{
     margin-bottom: 6px;
     font-size: 16px;
@@ -170,27 +164,32 @@ footer{background-color: rgb(36, 35, 35);padding: 10px;}
     font-size: 21px;
 }
 
-/*media screens*/
-
 @media screen and (max-width: 768px){
     .desktop{
         display: none;
     }
 
-    .desktop{
-        display: none;
-    }
-
-    .mobile{
-        display: block;
-    }
-
     .logo{
+        z-index: 999;
+        position: relative;
+        top: auto;
+        float: none;
+        width: 100%;
+        height: 0;
+        padding: 0;
         margin-top: 0;
+        padding-top: 0;
+        text-align: center;
     }
 
     .logo h2{
-        padding-top: 20px;
+        padding-top: 15px;
+    }
+
+    .text{padding-top: 80px;}
+
+    .contato-wrapper{
+        width: 90%;
     }
 }
 

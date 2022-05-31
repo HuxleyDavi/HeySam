@@ -1,6 +1,6 @@
 /*//--------------------------By HS Corp-------------------------------//*/
 /*//---------------------------@hs.corp-------------------------------//*/
-/*--//-----------------------hscorpp@gmail.com-------------------------------//*/
+/*//-----------------------hscorpp@gmail.com-------------------------------//*/
 
 /*padrões do site*/
 
@@ -234,7 +234,7 @@ section.bg > .container{
 .bg-text button{
     margin-top: 10px;
     padding: 8px 30px;
-    border-radius: 10px;
+    border-radius: 20px;
     border: 0;
     background-color: rgba(255, 255, 255, 0.877);
     opacity: 0;
@@ -303,7 +303,7 @@ section.cards > .container{position: relative;}
     padding: 1%;
     width: 24%;
     height: 470px;
-    border-radius: 15px;
+    border-radius: 20px;
     background-color: white;
     transition: 0.8s all;
 }
@@ -350,7 +350,7 @@ section.cards > .container{position: relative;}
 }
 
 .text-bottom button{
-    border-radius: 15px;
+    border-radius: 20px;
     border: 2px solid black;
     cursor: pointer;
     padding: 8px 15px;;
@@ -393,7 +393,7 @@ section.contato{
 
 .contato-wrapper form input{
     outline: none;
-    border-radius: 15px;
+    border-radius: 20px;
     border: 1px solid black;
     width: 100%;
     padding: 8px;
@@ -404,7 +404,7 @@ section.contato{
 .contato-wrapper form input.end:hover{cursor: pointer;font-size: 15px;}
 
 .contato-wrapper form textarea{
-    border-radius: 15px;
+    border-radius: 20px;
     border: 1px solid black;
     width: 100%;
     resize: vertical;
@@ -535,7 +535,3 @@ footer{background-color: rgb(36, 35, 35);padding: 10px;}
 
 /*medias screens*/
 /****/
-
-/*//--------------------------By HS Corp-------------------------------//*/
-/*//---------------------------@hs.corp-------------------------------//*/
-/*--//-----------------------hscorpp@gmail.com-------------------------------//*/
