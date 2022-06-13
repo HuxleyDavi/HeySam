@@ -83,7 +83,7 @@ $(function(){
 $(".carrosel").slick({
 	dots: true,
 	centerMode: true,
-	slidesToShow: 3,
+	slidesToShow: 4,
 	arrows: false,
 	responsive:[
 

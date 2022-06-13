@@ -18,8 +18,10 @@ html,body{height: 100%;scroll-behavior: smooth;/*background-color: #777777;*/}
 
 .logo a{color: black;font-size: 26px;text-decoration: none;}
 
+/**DESKTOP**/
+
 .desktop{
-    z-index: 999;
+    display: block;
     float: right;
     margin-top: 30px;
 }
@@ -45,6 +47,57 @@ html,body{height: 100%;scroll-behavior: smooth;/*background-color: #777777;*/}
     background-color: #3535353b;
     font-size: 18px;
 }
+
+/****/
+
+/**MOBILE**/
+
+.mobile{
+	float: right;
+    display: none;
+}
+
+.mobile ul{
+	display: none;
+	z-index: 1;
+	position: absolute;
+	left: 0;
+	top: 4.1rem;
+	border-top:2px solid black;
+	background: white;
+	width: 100%;
+	list-style-type: none;
+}
+
+.mobile ul li{
+	text-align: center;
+	width: 100%;
+	display: inline-block;
+	border-bottom: 1px solid black;
+	padding: 6.4px;
+	transition: all 0.3s;
+}
+
+.mobile a{
+	font-family: var(--font-primary);
+	color: black;
+	padding: 8px 20px;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+.mobile a:hover{
+    font-size: 1.12rem;
+}
+
+.mobile > i{
+    margin-top: 20px;
+	cursor: pointer;
+	font-size: 2rem;
+	color: black;
+}
+
+/****/
 
 .text{height: 85vh;}
 .text-wrapper{
@@ -82,8 +135,8 @@ section.produtos{
 
 .carrosel img{
     padding: 10px;
-    width: 220px;
-    height: 220px;
+    width: 100px;
+    height: 250px;
 }
 
 /**ESTILOS PLUGIN SLICK**/
@@ -127,14 +180,18 @@ li.slick-active button{
 
 /**PRODUTOS WRAPPER**/
 
-/*section.produtos > .container{
-    max-width: 1000px;
-}*/
-
 .prod-wrapper{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: auto auto auto;
+    grid: 100px auto;
+    /*
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    */
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .prod-single{
@@ -236,6 +293,20 @@ li.slick-active button{
 
 /****/
 
+.text-bottom{
+    text-align: left;
+    margin: 40px 0;
+}
+
+.text-bottom-wrapper button{
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    border-radius: 20px;
+    padding: 4px 12px;
+    margin-top: 4px;
+}
+
 footer{background-color: rgb(36, 35, 35);padding: 10px;}
 
 .footer-wrapper{
@@ -279,6 +350,10 @@ footer{background-color: rgb(36, 35, 35);padding: 10px;}
         display: none;
     }
 
+    .mobile{
+        display: block;
+    }
+
     .logo{
         z-index: 999;
         position: relative;
@@ -289,11 +364,20 @@ footer{background-color: rgb(36, 35, 35);padding: 10px;}
         padding: 0;
         margin-top: 0;
         padding-top: 0;
-        text-align: center;
+        text-align: left;
     }
 
     .logo h2{
         padding-top: 15px;
+    }
+
+    .text-wrapper{
+        padding-top: 60px;
+        text-align: center;
+    }
+
+    .prod-wrapper{
+        grid-template-columns: auto auto;
     }
 }
 
@@ -303,5 +387,9 @@ footer{background-color: rgb(36, 35, 35);padding: 10px;}
         width: 100%;
         margin-top: 5px;
         margin-bottom: 15px;
+    }
+
+    .prod-wrapper{
+        grid-template-columns: auto;
     }
 }
