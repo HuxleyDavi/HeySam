@@ -22,9 +22,6 @@ footer{
 /*header*/
 
 .logo{
-    z-index: 999;
-    position: fixed;
-    top: 0;
     float: left;
     width: 187px;
     height: 50px;
@@ -35,10 +32,6 @@ footer{
 .logo a{color: black;font-size: 26px;text-decoration: none;}
 
 .desktop{
-    z-index: 999;
-    position: fixed;
-    top: 0;
-    right: 50px;
     float: right;
     margin-top: 30px;
 }
@@ -49,7 +42,7 @@ footer{
 
 .desktop ul li{
     display: inline-block;
-    margin: 10px 20px;
+    margin: 8px 20px;
 }
 
 .desktop ul li a{
@@ -65,14 +58,18 @@ footer{
     font-size: 18px;
 }
 
+/****/
+
+/**MOBILE**/
+
 .mobile{
 	float: right;
 	display: none;
 }
 
 .mobile ul{
+    z-index: 999;
 	display: none;
-	z-index: 1;
 	position: absolute;
 	left: 0;
 	top: 4.1rem;
@@ -107,7 +104,7 @@ footer{
     margin-top: 20px;
 	cursor: pointer;
 	font-size: 2rem;
-	color: white;
+	color: black;
 }
 
 /****/
@@ -177,16 +174,17 @@ footer{background-color: rgb(36, 35, 35);padding: 10px;}
         display: none;
     }
 
-    .desktop{
-        display: none;
-    }
-
     .mobile{
         display: block;
     }
 
     .logo{
+        width: 100%;
+        height: 0;
+        padding: 0;
         margin-top: 0;
+        padding-top: 0;
+        text-align: left;
     }
 
     .logo h2{
